@@ -818,6 +818,11 @@ h3 {
     /* Stack gallery and info */
   }
 
+  /* Cart Mobile */
+  .cart-layout-grid {
+    grid-template-columns: 1fr !important;
+  }
+
   /* Adjust Header */
   .main-header .container {
     justify-content: center;

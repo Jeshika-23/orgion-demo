@@ -218,7 +218,7 @@ function renderProductDetail(product, container) {
     : '';
 
   const originalPriceHtml = product.originalPrice > product.price
-    ? `<span class="original-price">$${product.originalPrice.toFixed(2)}</span> <span class="discount-badge">${discount}</span>`
+    ? `<span class="original-price">₹${product.originalPrice.toFixed(2)}</span> <span class="discount-badge">${discount}</span>`
     : '';
 
   // Use gallery if available, otherwise just the main image repeatedly
@@ -263,7 +263,7 @@ function renderProductDetail(product, container) {
         </p>
 
         <div class="price-block">
-          <span class="current-price">$${product.price.toFixed(2)} USD</span>
+          <span class="current-price">₹${product.price.toFixed(2)}</span>
           ${originalPriceHtml}
         </div>
 
@@ -428,8 +428,8 @@ function renderProducts(items, container) {
         </div>
         <div class="product-info">
             <h3 class="product-title">${product.name}</h3>
-            <span class="product-price">$${product.price.toFixed(2)}</span>
-            ${product.originalPrice > product.price ? `<span style="text-decoration:line-through; font-size:0.9rem; color:#999; margin-left:6px;">$${product.originalPrice.toFixed(2)}</span>` : ''}
+            <span class="product-price">₹${product.price.toFixed(2)}</span>
+            ${product.originalPrice > product.price ? `<span style="text-decoration:line-through; font-size:0.9rem; color:#999; margin-left:6px;">₹${product.originalPrice.toFixed(2)}</span>` : ''}
         </div>
       </a>
        <div style="padding: 0 1rem 1.5rem 1rem;">
@@ -499,7 +499,7 @@ function renderCart() {
     <div class="cart-item">
       <div>
         <h4>${item.name}</h4>
-        <p>$${item.price.toFixed(2)} x ${item.quantity}</p>
+        <p>₹${item.price.toFixed(2)} x ${item.quantity}</p>
       </div>
       <div>
         <button class="btn-secondary" style="padding:4px 8px;" onclick="updateQuantity(${item.id}, -1)">-</button>
