@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart - Orgion Skincare</title>
+    <!-- Google Fonts: Outfit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="app">
+        <!-- Navigation -->
+        <header class="main-header">
+            <div class="container header-content">
+                <a href="/" class="logo">Orgion.</a>
+                <nav class="main-nav">
+                    <ul class="nav-list">
+                        <li><a href="/" class="nav-link">Home</a></li>
+                        <li><a href="/shop.html" class="nav-link">Shop</a></li>
+                        <li><a href="/about.html" class="nav-link">Our Story</a></li>
+                    </ul>
+                </nav>
+                <div class="header-actions">
+                    <a href="/cart.html" class="cart-btn" >
+                        Cart (<span id="cart-count">0</span>)
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content Area -->
+        <main id="main-content">
+            <section class="container" style="padding-top: 40px; min-height: 60vh;">
+                <h1>Your Shopping Cart</h1>
+
+                <div style="display: grid; grid-template-columns: 2fr 1fr; gap: 40px; margin-top: 40px;">
+                    <div id="cart-items">
+                        <!-- Cart items injected here -->
+                    </div>
+
+                    <div class="cart-summary">
+                        <h3>Order Summary</h3>
+                        <div
+                            style="display:flex; justify-content:space-between; margin: 20px 0; font-size: 1.2rem; font-weight:600;">
+                            <span>Total:</span>
+                            <span>$<span id="cart-total">0.00</span></span>
+                        </div>
+                        <a href="/checkout.html" class="btn" style="width:100%; text-align:center;">Proceed to
+                            Checkout</a>
+                        <br><br>
+                        <a href="/shop.html" style="display:block; text-align:center; font-size:0.9rem;">Continue
+                            Shopping</a>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="main-footer">
+            <div class="container">
+                <p>&copy; 2025 Orgion Skincare. Natural & Pure.</p>
+            </div>
+        </footer>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>

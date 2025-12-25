@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Organic Haircare - Orgion Skincare</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="app">
+        <header class="main-header">
+            <div class="container header-content">
+                <a href="/" class="logo">Orgion.</a>
+                <nav class="main-nav">
+                    <ul class="nav-list">
+                        <li><a href="/" class="nav-link">Home</a></li>
+                        <li><a href="/shop.html" class="nav-link" >Shop</a></li>
+                        <li><a href="/about.html" class="nav-link">Our Story</a></li>
+                    </ul>
+                </nav>
+                <div class="header-actions">
+                    <a href="/cart.html" class="cart-btn">
+                        Cart (<span id="cart-count">0</span>)
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <main id="main-content">
+            <section class="container" style="padding-top: 40px;">
+                <h1 style="text-align:center;">Natural Haircare</h1>
+                <p style="text-align:center; max-width:600px; margin:0 auto 40px auto; color:var(--color-text-light);">
+                    Shampoos and conditioners free from harsh chemicals.
+                </p>
+                <div style="text-align:center; margin-bottom: 40px;">
+                    <a href="/shop.html" class="btn-secondary"
+                        style="margin: 0 4px; display:inline-block; padding:12px 24px; border-radius:8px;">All</a>
+                    <a href="/soaps.html" class="btn-secondary"
+                        style="margin: 0 4px; display:inline-block; padding:12px 24px; border-radius:8px;">Soaps</a>
+                    <a href="/oils.html" class="btn-secondary"
+                        style="margin: 0 4px; display:inline-block; padding:12px 24px; border-radius:8px;">Oils</a>
+                    <button class="btn"
+                        style="margin: 0 4px; background:var(--color-text); color:white;">Haircare</button>
+                </div>
+                <!-- Note: using 'shampoo' and 'facewash' for broad filtering demo, or extend data categories -->
+                <div id="shop-products" class="grid-products" data-category="shampoo,facewash">
+                    <!-- Haircare injected here -->
+                </div>
+            </section>
+        </main>
+
+        <footer class="main-footer">
+            <div class="container">
+                <p>&copy; 2025 Orgion Skincare. Natural & Pure.</p>
+            </div>
+        </footer>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>

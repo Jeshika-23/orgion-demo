@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Orgion - Natural Skincare</title>
+  <!-- Google Fonts: Outfit -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div id="app">
+    <!-- Navigation -->
+    <header class="main-header">
+      <div class="container header-content">
+        <a href="/" class="logo">Orgion.</a>
+        <nav class="main-nav">
+          <ul class="nav-list">
+            <li><a href="/" class="nav-link">Home</a></li>
+            <li><a href="/shop.html" class="nav-link">Shop</a></li>
+            <li><a href="/about.html" class="nav-link">Our Story</a></li>
+            <li><a href="/contact.html" class="nav-link">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="header-actions">
+          <a href="/cart.html" class="cart-btn">
+            Cart (<span id="cart-count">0</span>)
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main id="main-content">
+      <section class="hero">
+        <div class="container">
+          <h1>Glow Naturally with Orgion</h1>
+          <p>Experience the purity of nature with our hand-picked collection of organic soaps, oils, and facewashes.</p>
+          <a href="/shop.html" class="btn">Shop Collection</a>
+        </div>
+      </section>
+
+      <section class="container">
+        <h2>Featured Products</h2>
+        <div id="featured-products" class="grid-products">
+          <!-- Products will be injected here -->
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+      <div class="container">
+        <p>&copy; 2025 Orgion Skincare. Natural & Pure.</p>
+      </div>
+    </footer>
+  </div>
+  <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>
