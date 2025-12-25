@@ -690,6 +690,37 @@ h3 {
   margin: 0;
 }
 
+/* Category Filters */
+.category-filters {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  max-width: 600px;
+  margin: 0 auto 40px auto;
+  padding: 0 16px;
+}
+
+.category-filters a,
+.category-filters button {
+  margin: 0 !important;
+  /* Override inline margins */
+  width: 100%;
+  text-align: center;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  /* Ensure uniform height */
+}
+
+@media (max-width: 600px) {
+  .category-filters {
+    grid-template-columns: 1fr 1fr;
+    /* 2x2 Grid on Mobile */
+  }
+}
+
 /* Variant Selectors Oliq style */
 .selector-group {
   margin-bottom: 24px;
